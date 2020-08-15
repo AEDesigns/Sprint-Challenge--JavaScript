@@ -1,5 +1,27 @@
 // ==== ADVANCED Array Methods ====
 
+// Self Study Questions
+
+// 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+// A forEach loop is slower, and throws away return values. A map loop will store return values as it iterates over the array.
+
+// 2. Explain the difference between a callback and a higher order function.
+// A higher-order function is a function that takes another function(s) as an argument(s) and/or returns a function to its callers. A callback function is a function that is passed to another function with the expectation that the other function will call it.
+
+// 3. What is closure?
+// Closure is using a function inside of another function, and the value of the inner function is return in the outer function. 
+
+// 4. Describe the four rules of the 'this' keyword.
+// Global Context Rule - when this isn't defined on an object, it becomes globally scoped and defaults to the window object. 
+// Implicit Rule - refers to using "this" inside of an object, so it defaults to the object it's used inside of
+// Explicit Rule - Refers to using "this.obj" to directly name the object youre wanting to use
+// New Rule - The new keyword is used in javascript to create a object from a constructor function.
+
+// 5. Why do we need super() in an extended class?
+// It's used to gain access to the parent class and gain access to the properties and methods. 
+
+
+
 // Given this zoo data from around the United States, follow the instructions below.  Use the specific array methods in the requests below to solve the problems.
 
 const zooAnimals = [
