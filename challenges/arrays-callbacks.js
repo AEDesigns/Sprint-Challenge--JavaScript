@@ -83,8 +83,8 @@ The zoos need to know their total animal population across the United States. Fi
 
 */
 const populationTotal = zooAnimals.reduce(
-  function(callBackPopReduce, data){
-    return callBackPopReduce + data.population;
+  function(callBackPop, data){
+    return callBackPop + data.population;
   }, 0);
 
 
@@ -100,6 +100,9 @@ console.log(populationTotal);
   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 */
 
+function consume(a, b, cb){
+  return cb(a, b)
+}
 
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
