@@ -18,6 +18,7 @@ myFunction();
 
 // Explanation: 
 
+// nestedFunction can access internal due to them both being within the block level scope. 
 
 /* Task 2: Counter */
 
