@@ -45,7 +45,7 @@ The zoos want to display both the scientific name and the animal name in front o
 const displayNames = [];
 
 function animalNames(zooAnimals){
-  displayNames.push([zooAnimals.animal_name, zooAnimals.scientific_name])
+  displayNames.push([zooAnimals.animal_name, zooAnimals.scientific_name].join())
 }
 
 zooAnimals.forEach(animalNames)
@@ -71,6 +71,10 @@ The zoos are concerned about animals with a lower population count. Using filter
 
 */
 const lowPopulationAnimals = [];
+
+lowPopulationAnimals.push(zooAnimals.filter(animal => {
+  return animal.population < 5
+}))
 console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
